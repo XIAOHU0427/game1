@@ -1,1 +1,1 @@
-(https://xiaohu0427.github.io/game1/)
+https://xiaohu0427.github.io/game1/

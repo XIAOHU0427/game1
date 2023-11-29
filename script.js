@@ -1,6 +1,6 @@
 // 获取页面中的一些元素，并将它们存储在对应的变量中。
 const screens = document.querySelectorAll('.screen');
-const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
+const get_element_btns = document.querySelectorAll('.choose-insect-btn');
 const start_btn = document.getElementById('start-btn')
 const game_container = document.getElementById('game-container')
 const timeEl = document.getElementById('time')
@@ -12,7 +12,7 @@ let selected_insect = {}
 
 start_btn.addEventListener('click', () => screens[0].classList.add('up'))
 
-choose_insect_btns.forEach(btn => {
+get_element_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img')
         const src = img.getAttribute('src')

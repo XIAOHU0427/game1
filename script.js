@@ -58,12 +58,12 @@ function getRandomLocation() {
     const y = Math.random() * (height - 200) + 100
     return { x, y }
 }
-
+// 当元素被点击后，增加分数，并2秒后移除
 function catchInsect() {
-    increaseScore()
+    increaseScore() //增加分数
     this.classList.add('caught')
     setTimeout(() => this.remove(), 2000)
-    addInsects()
+    addInsects() //添加更多的元素
 }
 
 function addInsects() {

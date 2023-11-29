@@ -1,3 +1,4 @@
+// 获取页面中的一些元素，并将它们存储在对应的变量中。
 const screens = document.querySelectorAll('.screen');
 const choose_insect_btns = document.querySelectorAll('.choose-insect-btn');
 const start_btn = document.getElementById('start-btn')

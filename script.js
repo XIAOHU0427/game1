@@ -27,7 +27,7 @@ get_element_btns.forEach(btn => {
 function startGame() {
     setInterval(increaseTime, 1000)
 }
-
+// 将秒数转化成分钟和秒，并显示在页面上
 function increaseTime() {
     let m = Math.floor(seconds / 60)
     let s = seconds % 60
@@ -65,12 +65,12 @@ function catchInsect() {
     setTimeout(() => this.remove(), 2000)
     addInsects() //添加更多的元素
 }
-
+// 赠加更多的元素
 function addInsects() {
     setTimeout(createInsect, 1000)
     setTimeout(createInsect, 1500)
 }
-
+// 用于赠加分数，超过19分，弹出消息
 function increaseScore() {
     score++
     if(score > 19) {

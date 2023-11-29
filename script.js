@@ -10,8 +10,10 @@ let seconds = 0
 let score = 0
 let selected_insect = {}
 
+// 点击事件监听器，当点击开始按钮时，将第一个屏幕元素添加一个 up 类，以隐藏该屏幕。
 start_btn.addEventListener('click', () => screens[0].classList.add('up'))
 
+// 当点击选择昆虫按钮时，从按钮中提取图片的 src 和 alt 属性，并将其存储在 selected_insect 对象中。
 get_element_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         const img = btn.querySelector('img')

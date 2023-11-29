@@ -37,6 +37,7 @@ function increaseTime() {
     seconds++
 }
 
+// 生成元素
 function createInsect() {
     const insect = document.createElement('div')
     insect.classList.add('insect')
@@ -49,7 +50,7 @@ function createInsect() {
 
     game_container.appendChild(insect)
 }
-
+// 用于元素生成的位置，这里是随机生成元素位置
 function getRandomLocation() {
     const width = window.innerWidth
     const height = window.innerHeight
